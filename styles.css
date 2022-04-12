@@ -265,6 +265,7 @@ aside {
 
 footer {
   display: flex;
+  flex-wrap: wrap;
   /* align-items: center; */
   justify-content: space-evenly;
   padding-top: 4rem;
