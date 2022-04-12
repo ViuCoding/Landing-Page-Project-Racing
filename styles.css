@@ -23,6 +23,10 @@ ul {
   font-family: var(--font-main);
 }
 
+body {
+  position: relative;
+}
+
 header {
   height: 100vh;
   display: flex;
@@ -30,7 +34,7 @@ header {
   align-items: center;
   justify-content: center;
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/bg3.jpg") top/cover fixed no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("./img/bg3.jpg") top/cover scroll no-repeat;
 }
 
 #navigation {
@@ -129,4 +133,43 @@ header {
   color: var(--clr-accent);
   font-weight: 600;
   background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.7));
+}
+
+.racing-1 {
+  height: 100vh;
+  background: url("./img/bg5.jpg") center/cover fixed no-repeat;
+}
+
+aside {
+  position: fixed;
+  top: 50%;
+  right: 0px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  background-color: #e0e0e0;
+  border-radius: 3px;
+}
+
+.socials i {
+  font-size: 1rem;
+  padding: 0.6rem;
+  color: lightslategray;
+  border-bottom: 1px solid lightslategrey;
+  transition: all ease 0.5ms;
+}
+
+.fa-twitter:hover {
+  color: #00acee;
+}
+.fa-discord:hover {
+  color: #7289da;
+}
+.fa-youtube:hover {
+  color: #b2071d;
+}
+.fa-envelope:hover {
+  color: goldenrod;
 }
