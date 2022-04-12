@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+  --font-main: "Roboto", monospace;
+
+  --clr-text-main: #e0e0e0;
+  --clr-base: #fff;
+  --clr-accent: #e3001b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/bg1.jpg") center/cover fixed no-repeat;
+}
+
+#navigation {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 0.3rem 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+}
+#navigation img {
+  width: 180px;
+}
+#navigation ul {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+@media (max-width: 1300px) {
+  #navigation ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+#navigation ul a {
+  text-decoration: none;
+  color: var(--clr-base);
+  text-shadow: -1px 1px 3px rgba(255, 255, 255, 0.4);
+  /* margin-right: 1rem; */
+}
+
+#navigation ul a {
+  transition: all 0.3s ease;
+}
+
+#navigation ul a:hover {
+  color: var(--clr-accent);
+}
+
+.cta {
+  width: 50%;
+}
+.cta h1 {
+  color: var(--clr-text-main);
+  font-size: 4rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media (max-width: 1300px) {
+  .cta h1 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 686px) {
+  .cta h1 {
+    margin-top: 4rem;
+  }
+}
+
+.button-div {
+  margin: 1rem auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 800px) {
+  .button-div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-div button:nth-of-type(2) {
+    margin-top: 1rem;
+  }
+}
+
+.button-div button {
+  font-family: inherit;
+  padding: 1rem 1rem;
+  font-size: 0.95rem;
+  border: none;
+  color: var(--clr-text-main);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.button-div button:hover {
+  color: var(--clr-accent);
+  font-weight: 600;
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.7));
+}
