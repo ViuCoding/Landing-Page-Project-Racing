@@ -30,7 +30,7 @@ header {
   align-items: center;
   justify-content: center;
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/bg1.jpg") center/cover fixed no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/bg3.jpg") top/cover fixed no-repeat;
 }
 
 #navigation {
